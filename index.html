@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/a432400a53.js" crossorigin="anonymous"></script>
+
+</head>
+<body> <!-- This section contains  all of the elements for the main cotent of the HTML doc -->
+<div id="header"> <!-- contains the header section with id of header, making the styling unique to only this section-->
+    <div class="container"> <!-- container for the header content for styling -->
+        <nav> <!-- represents a section for navigation links -->
+            <div class="logo-container"> 
+                <p>Sadra <br>Shirdarreh</p>
+            </div>
+            <ul id="sidemenu"> <!-- and unordered list rep the navigation menu -->
+                <li><a href="#header">Home</a></li> <!-- list item containing link for Home page-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <br><span>Sadra Shirdarreh;</span></h1>
+            <p>a Computer Engineering Student at the University of Toronto</p>
+        </div>
+    </div>
+</div>
+
+<!------------------------- About ---------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_5699.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am Sadra Shirdarreh, a Computer Engineering student at the University of Toronto with 
+                    extensive experience in software development, electrical circuit and board design, web 
+                    development, embedded systems, and full-stack development. My expertise includes creating 
+                    intricate electrical circuits, designing robust PCBs, and developing comprehensive full-stack
+                     web applications and embedded software solutions. Passionate about integrating hardware and 
+                     software, I have honed my skills in various programming languages and development tools, consistently 
+                     delivering innovative and efficient solutions across multiple domains.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Projects</p>
+                    <p class="tab-links" onclick="opentab('projects')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UX/UI</span><br>Designing Web and App Interfaces</li>
+                        <li><span>Web Development</span><br>Building Web Applications</li>
+                        <li><span>Embedded Development</span><br>Software Development for Embedded Systems</li>
+                        <li><span>PCB Design</span><br>Designing and Manufacturing Custom Made PCBs</li>
+                        <li><span>Circuit Design</span><br>Designing Electrically Reliable Circuits</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - 2024</span><br>Radical AI</li>
+                        <li><span>2023 - Current</span><br>University of Toronto Formula Racing Team</li>
+                        <li><span>2022 - Current</span><br>S.S. Marketing</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Cube Sat Ground Simulator</li>
+                        <li><span>2023</span><br>Chess Game on FPGA</li>
+                        <li><span>2023</span><br>Brake System Plausibility Device PCB</li>
+                        <li><span>2022</span><br>Racing Game on FPGA</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Bachelors of Computer Engineering at University of Toronto</li>
+                        <li><span>2018 - 2022</span><br>IB and OSSD Diploma</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-------------------------------- Services -------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Create and Develope Interacting Websites for Small Businesses</p>
+                <a href="#">Learn more</a>  
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UX/UI Design</h2>
+                <p>UX and UI Interface Design and Development</p>
+                <a href="#">Learn more</a>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------- Portfolio ------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/1_-Kg9ybhy5yZ0c9pefECC5g.jpg">
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>Desciption</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Exodus-Orbitals-b-l.jpg">
+                <div class="layer">
+                    <h3>Cube Sat Ground Simulator</h3>
+                    <p>Desciption</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/MI23_Car_Full_Aero1-650x433-1.jpg">
+                <div class="layer">
+                    <h3>Formula Racing Car</h3>
+                    <p>Desciption</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!------------------------------------------- contact ------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://ca.linkedin.com/in/sadra-shirdarreh"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169 2024 Sadra Shirdarreh</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-170px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyoMqBUjmIPvlKXvzPiiRhhZ9dF7JSszIZ24-GXFvdcF26AVzsJ5PcjhWEMPspB8MXeLg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msh = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form. reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
